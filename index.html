@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta name ="viewport"
+   content="width=device-width, initial-scale=1.0">
+   <title>My Page</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Thank You Note</h2>
+    
+    <div class="row">
+    <button onclick="print('Thank You for wishing me, grateful to have as a friend')">English</button> 
+    <button onclick="print('तपाईंको शुभकामनाको लागि धन्यवाद। तपाईं मेरो साथी हुनुमा म आभारी छु।')">Nepali</button>
+    <button onclick="print('شكرًا على تهنئتك، ممتن لصداقتك.')">Arabic</button>
+    </div>
+    
+    <div class="row">
+    <button onclick="print('তোমার শুভেচ্ছার জন্য ধন্যবাদ, তোমার মতো একজন বন্ধু পেয়ে আমি কৃতজ্ঞ।')">Bengali</button>
+    <button onclick="print('Medɔ wo akpe na wopɛ me ho. M’ani agye sɛ woyɛ me adamfo.')">Twi</button>
+    <button onclick="print('Grazie per gli auguri, sono grato di averti come amico.')">Italian</button>
+    <button onclick="print('Obrigado pelos votos, sou grato por ter você como amigo.')">portuguese</button>
+    </div>
+    
+    <div class="row">
+    <button onclick="print('Gracias por tus deseos, estoy agradecido de tenerte como amigo.')">Spanish</button>
+    <button onclick="print('Na gode da fatan alkhairi, ina godiya da kasancewarka abokina.')">Hausa</button>
+    <button onclick="print('I ni ce kɔfɛ, n bɛ se ka fɛ ka i ye n ka tɔgɔ.')">Bambara</button>
+    
+    </div>
+    
+    
+    <p>From <strong>Humza</strong></p>
+    <div id="thankyounote"></div>
+    <p class="bottom">&copy; Humza</p>
+    
+    <script>
+      function print(text)
+      {
+        document.getElementById('thankyounote').innerText = text;
+      }
+    </script>
+  </body>
+</html>
